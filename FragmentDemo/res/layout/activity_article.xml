@@ -1,0 +1,156 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.fragmentdemo.ArticleActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+          <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="502dp"
+        android:orientation="vertical"
+        android:scrollbars="vertical" >
+
+              <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+                  <TextView
+                android:id="@+id/textView1"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="#9ccc65"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+            
+      <LinearLayout 
+           android:layout_width="60dp"
+            android:layout_height="48dp" 
+          android:orientation="horizontal"
+          android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+          >
+
+          <ImageView
+              android:layout_width="20dp"
+              android:layout_height="match_parent"
+             
+              android:src="@drawable/fanhui" />
+     
+            <Button
+                android:id="@+id/btnArticleBack"
+                android:layout_width="wrap_content"
+                
+                android:layout_height="wrap_content"
+                
+                android:background="#9ccc65"
+                android:onClick="back"
+                android:text="返回"
+                android:textColor="#ffffff" />
+ </LinearLayout>
+
+      
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:text="汽车除雾神技巧—三招教你快速除雾"
+            android:textSize="17sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="2017年4月25日"
+                android:textColor="#6e6d6e" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="15dp"
+                android:text="顶尖·车服务公司"
+                android:textColor="#6e6d6e" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="25dp"
+            android:inputType="textMultiLine"
+            android:text="       冷空气不仅带来了潮湿阴冷，前挡风玻璃起雾的麻烦也随之而来，面对这个严重影响行车安全的老问题，下面来看下雾气的产生原因和都有哪些除雾妙招。" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="220dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/search" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="98dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:text="1、开窗对流
+      
+       如果发现车内雾气不大的话，可以将两侧的车窗打开一条缝隙，这样车内外空气形成对流，温差也会减小，雾气就会慢慢消失。这种方法的原理和开空调冷风是一样的，但不增加油耗。开窗对流的弊端非常明显，雨雪天气、高速路、雾气较大时都不可用，而且开窗会降低车内温度。" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:text="2、空调系统
+       
+       对于大部分车主来说，使用空调系统除雾是最为普遍的。现在市面上基本所有的汽车前挡风玻璃下，都有空调出风口，只需将空调选至相应档位就可利用空调吹出的风除雾。但用冷风还是暖风呢?冷/暖风各有优缺点，如果您着急上路可以用冷风应急。大多数情况还是建议您使用暖风。" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:text="3、除雾剂
+       
+       汽配城、超市等很多地方都有卖的。将除雾剂喷涂到汽车玻璃内表面，并擦拭干净，在清除玻璃污垢的同时，还还可形成保护膜，防止水汽在玻璃上的凝结而形成的雾层，喷擦一次可防雾十天左右。" />
+        
+    </LinearLayout>
+
+    </ScrollView>
+  
+</FrameLayout>
+

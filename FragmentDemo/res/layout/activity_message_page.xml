@@ -1,0 +1,58 @@
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context="com.example.fragmentdemo.MessagePageActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#62c420" >
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:background="@null"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginLeft="24dp"
+            android:layout_centerVertical="true"
+            android:onClick="back"
+            android:scaleType="fitXY"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/txt_msgtype2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="服务提醒"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txt_msgtime2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2017-4-24 17:00"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:textColor="#444444"/>
+
+    <ImageView
+        android:id="@+id/img_msgcontent"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:src="@drawable/msgtype1"/>
+
+</LinearLayout>
+    
+

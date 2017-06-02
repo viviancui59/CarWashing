@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.fragmentdemo.AddFeedbackActivity"
+    tools:ignore="MergeRootFrame" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#9ccc65"
+        android:id="@+id/relativeLayout">
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:background="@null"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginLeft="24dp"
+            android:layout_centerVertical="true"
+            android:onClick="back"
+            android:scaleType="fitXY"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/addFeedback"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="24dp"
+            android:gravity="center"
+            android:text="发送"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:onClick="addFeedback"/>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="意见反馈"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:inputType="textMultiLine"
+        android:layout_width="320dp"
+        android:id="@+id/txt_feedback"
+        android:hint="请将您的建议或意见告诉我们~"
+        android:textSize="14sp"
+        android:gravity="left|top"
+        android:padding="8dp"
+        android:background="@drawable/textview_border"
+        android:layout_height="200dp"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>
+    

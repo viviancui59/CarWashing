@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical" >
+
+
+<FrameLayout
+    android:id="@+id/pagelayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="wrap_content"
+        android:layout_height="140dp"
+        android:layout_marginTop="5dp"
+        android:scaleType="fitXY" >
+
+    </android.support.v4.view.ViewPager>
+</FrameLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:background="#ffffff"
+    android:orientation="horizontal" 
+      
+     android:layout_marginBottom="10dp"
+      android:layout_marginTop="10dp"
+     >
+
+    <ImageButton
+        android:id="@+id/imageBtn_OrderWash"
+        android:layout_width="170dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/layout_border"
+        android:onClick="orderwash"
+        android:radius="30dip"
+        android:scaleType="centerCrop"
+        android:src="@drawable/yuyuexiche" />
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" 
+  
+    android:layout_marginRight="10dp"
+      >
+   
+     <ImageButton
+         android:id="@+id/imageBtn_fuwudianmian"
+         android:layout_width="match_parent"
+         android:layout_height="0dp"
+         android:layout_marginBottom="10dp"
+         android:layout_weight="1"
+         android:background="#80c6ff"
+         android:maxHeight="30dp"
+         android:onClick="fuwudianmian"
+         android:scaleType="center"
+         android:src="@drawable/fuwudianmian" />
+  
+       <ImageButton
+           android:id="@+id/imageBtn_fuwucheliang"
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:layout_weight="1"
+           android:background="#ff9680"
+           android:onClick="fuwucheliang"
+           android:scaleType="center"
+           android:src="@drawable/fuwucheliang" />
+    
+    </LinearLayout>
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:background="#ffffff"
+    android:orientation="horizontal" 
+     android:layout_marginBottom="10dp"
+      
+     >
+    
+        <ImageButton
+            android:id="@+id/imageBtn_yuyuedala"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="3"
+            android:background="@drawable/layout_border"
+            android:onClick="yuyuedala"
+            android:scaleType="centerCrop"
+            android:src="@drawable/yuyuedala" />
+
+<ImageButton
+    android:id="@+id/imageBtn_yuyuebaoyang"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_marginRight="10dp"
+    android:layout_weight="5"
+    android:background="@drawable/layout_border"
+    android:onClick="yuyuebaoyang"
+    android:scaleType="centerCrop"
+    android:src="@drawable/yuyuebaoyang" />
+  
+</LinearLayout>
+
+
+
+</LinearLayout>
