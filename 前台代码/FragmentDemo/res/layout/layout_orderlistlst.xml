@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="32dp">
+        <TextView
+            android:id="@+id/txt_orderid"
+            android:layout_width="180dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/order_bg"
+            android:textColor="#ffffff"
+            android:textSize="11sp"/>
+        <TextView
+            android:id="@+id/txt_ordertime"
+            android:layout_width="140dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:textColor="#333333"
+            android:textSize="12sp"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="30dp"
+>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/order"/>
+                <TextView
+                    android:id="@+id/txt_ordertype"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="20dp"
+                    android:text="洗车服务"
+                    android:textColor="#444444"
+                    android:gravity="center_vertical"
+                    android:textSize="20sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+            <TextView
+                android:id="@+id/txt_orderplate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="#62c460"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:text="津A 11111"/>
+
+            <TextView
+                android:id="@+id/txt_orderprice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="金额：¥20"
+                android:paddingLeft="80dp"
+                android:paddingTop="4dp"
+                android:textSize="10sp"
+                android:textColor="#444444"/>
+
+            <TextView
+                android:id="@+id/txt_orderstore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="店面：一店"
+                android:paddingLeft="80dp"
+                android:paddingTop="4dp"
+                android:textSize="10sp"
+                android:textColor="#444444"
+                 />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

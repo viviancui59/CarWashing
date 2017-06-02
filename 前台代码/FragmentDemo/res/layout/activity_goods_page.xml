@@ -1,0 +1,79 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+       android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    
+    tools:context="com.example.ty.fragmentdemo.GoodsPageActivity"
+    tools:ignore="MergeRootFrame" >
+    
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content" >
+
+          
+		<TextView
+	        android:id="@+id/textView1"
+	        android:layout_width="fill_parent"
+	        android:layout_height="48dp"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentTop="true"
+	        android:background="#4caf50"
+	        android:gravity="center"
+	        android:text="商品信息"
+	        android:textColor="#ffffff"
+	        android:textSize="20sp" />
+            
+		<LinearLayout
+			android:layout_width="80dp"
+    		android:layout_height="48dp" 
+			android:orientation="horizontal"
+			android:paddingLeft="10dp"
+			android:layout_alignParentLeft="true"
+			android:layout_alignParentTop="true">
+
+		<ImageView
+			android:layout_width="20dp"
+			android:layout_height="match_parent"
+			android:src="@drawable/fanhui" />
+     
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="#4caf50"
+			android:onClick="back"
+			android:text="返回"
+			android:textSize="16sp"
+			android:textColor="#ffffff" />
+		</LinearLayout>
+	</RelativeLayout>
+
+    <ImageView
+        android:id="@+id/img_goods1"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:scaleType="centerCrop"/>
+    <TextView
+        android:id="@+id/txt_goodsname1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textSize="16sp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#444444"/>
+    <TextView
+        android:id="@+id/txt_goodsprice1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textSize="15sp"
+        android:textColor="#62c460"
+        android:textStyle="bold"
+        android:layout_marginLeft="16dp"/>
+    <TextView
+        android:id="@+id/txt_goodsintro1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="13sp"
+        android:textColor="#444444"
+        android:layout_marginLeft="10dp"/>
+</LinearLayout>

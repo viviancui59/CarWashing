@@ -1,0 +1,71 @@
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context="com.example.ty.fragmentdemo.MessagePageActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content" >
+
+          
+		<TextView
+	        android:id="@+id/txt_msgtype2"
+	        android:layout_width="fill_parent"
+	        android:layout_height="48dp"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentTop="true"
+	        android:background="#4caf50"
+	        android:gravity="center"
+	        android:text="服务提醒"
+	        android:textColor="#ffffff"
+	        android:textSize="20sp" />
+            
+		<LinearLayout
+			android:layout_width="80dp"
+    		android:layout_height="48dp" 
+			android:orientation="horizontal"
+			android:paddingLeft="10dp"
+			android:layout_alignParentLeft="true"
+			android:layout_alignParentTop="true">
+
+		<ImageView
+			android:layout_width="20dp"
+			android:layout_height="match_parent"
+			android:src="@drawable/fanhui" />
+     
+		<Button
+			android:id="@+id/btnAboutusBack"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="#4caf50"
+			android:onClick="back"
+			android:text="返回"
+			android:textSize="16sp"
+			android:textColor="#ffffff" />
+		</LinearLayout>
+	</RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/txt_msgtime2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2017-4-24 17:00"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:textColor="#444444"/>
+
+    <ImageView
+        android:id="@+id/img_msgcontent"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:src="@drawable/msgtype1"/>
+
+</LinearLayout>
+    
+

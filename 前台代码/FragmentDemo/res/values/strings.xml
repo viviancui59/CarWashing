@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">盛合源洗车</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_login">盛合源洗车</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_function">FunctionActivity</string>
+    <string name="title_activity_aboutus">AboutusActivity</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="title_activity_complete_register">CompleteRegisterActivity</string>
+    <string name="title_activity_add_feedback">AddFeedbackActivity</string>
+    <string name="title_activity_delete_message">DeleteMessageActivity</string>
+    <string name="title_activity_message_page">MessagePageActivity</string>
+    <string name="title_activity_my_info">MyInfoActivity</string>
+    <string name="title_activity_show_message">ShowMessageActivity</string>
+    <string name="title_activity_order_maintenance">OrderMaintenanceActivity</string>
+    <string name="title_activity_order_wash">OrderWashActivity</string>
+    <string name="title_activity_order_wax">OrderWaxActivity</string>
+    <string name="title_activity_store">StoreActivity</string>
+    <string name="title_activity_car_information">CarInformationActivity</string>
+    <string name="title_activity_add_car_infomation">AddCarInfomationActivity</string>
+    <string name="title_activity_show_car_brand">ShowCarBrandActivity</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="title_activity_article">ArticleActivity</string>
+    <string name="title_activity_goods_tab">GoodsTabActivity</string>
+    <string name="title_activity_goods_page">GoodsPageActivity</string>
+    <string name="title_activity_orderlist_tab">OrderlistTabActivity</string>
+    <string name="title_activity_delete_orderlist">DeleteOrderlistActivity</string>
+    <string name="title_activity_orderlist_tab2">OrderlistTab2Activity</string>
+    <string name="title_activity_goods_tab_parts">GoodsTabPartsActivity</string>
+    <string name="title_activity_goods_tab_interior">GoodsTabInteriorActivity</string>
+    <string name="title_activity_goods_tab_elec">GoodsTabElecActivity</string>
+
+</resources>

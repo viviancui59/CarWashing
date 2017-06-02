@@ -1,0 +1,274 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0000ff"
+    tools:context="com.example.carwashing.OrderMaintenanceActivity"
+    tools:ignore="MergeRootFrame"
+     >
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:background="#fcfcfc"
+       android:orientation="vertical" >
+
+       <RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content" >
+
+          
+		<TextView
+	        android:id="@+id/txtOrderMain"
+	        android:layout_width="fill_parent"
+	        android:layout_height="48dp"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentTop="true"
+	        android:background="#4caf50"
+	        android:gravity="center"
+	        android:text="预约保养"
+	        android:textColor="#ffffff"
+	        android:textSize="20sp" />
+            
+		<LinearLayout
+			android:layout_width="80dp"
+    		android:layout_height="48dp" 
+			android:orientation="horizontal"
+			android:paddingLeft="10dp"
+			android:layout_alignParentLeft="true"
+			android:layout_alignParentTop="true">
+
+		<ImageView
+			android:layout_width="20dp"
+			android:layout_height="match_parent"
+			android:src="@drawable/fanhui" />
+     
+		<Button
+			android:id="@+id/btnAboutusBack"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="#4caf50"
+			android:onClick="back"
+			android:text="返回"
+			android:textSize="16sp"
+			android:textColor="#ffffff" />
+		</LinearLayout>
+	</RelativeLayout>
+	
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="60dp"
+           android:layout_marginTop="15dp"
+           android:layout_weight="0.00"
+           android:background="#ffffff" >
+
+           <ImageView
+               android:id="@+id/imageView3"
+               android:layout_width="40dp"
+               android:layout_height="40dp"
+               android:layout_marginLeft="20dp"
+               android:layout_marginTop="10dp"
+               android:src="@drawable/weather" />
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical" >
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="5dp" >
+
+                   <TextView
+                       android:id="@+id/textView1"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginLeft="20dp"
+                       android:text="当前日期：" />
+
+                   <TextView
+                       android:id="@+id/txtMainDate"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginLeft="15dp" />
+
+               </LinearLayout>
+
+               <TextView
+                   android:id="@+id/textView3"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="20dp"
+                   android:text="今日天气：    多云转晴" />
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content" >
+
+                   <TextView
+                       android:id="@+id/textView4"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginLeft="20dp"
+                       android:text="保养指数：" />
+
+                   <RatingBar
+                       android:id="@+id/ratingBar3"
+                       style="?android:attr/ratingBarStyleSmall"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginLeft="15dp"
+                       android:numStars="5"
+                       android:rating="5.0" />
+
+               </LinearLayout>
+
+           </LinearLayout>
+
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="20dp"
+           android:background="#ffffff"
+           android:orientation="vertical" >
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content" >
+
+               <TextView
+                   android:id="@+id/textView2"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="15dp"
+                   android:text="预约日期"
+                   android:textSize="18sp" />
+
+               <TextView
+                   android:id="@+id/txtOrderMainDate"
+                   android:layout_width="50dp"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="15dp"
+                   android:layout_weight="0.5"
+                   android:text="请选择到店日期"
+                   android:textColor="#aaaaaa"
+                   android:textSize="18sp" />
+
+               <Button
+                   android:id="@+id/btnSelectMainDate"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:background="#ffffff"
+                   android:minHeight="45dp"
+                   android:onClick="selectDate"
+                   android:text=">"
+                   android:textColorLink="#000000" />
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content" >
+
+               <TextView
+                   android:id="@+id/textView6"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="15dp"
+                   android:text="预约时间"
+                   android:textSize="18sp" />
+
+              <TextView
+                  android:id="@+id/txtOrderMainTime"
+                  android:layout_width="50dp"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="15dp"
+                  android:layout_weight="0.5"
+                  android:text="请选择到店时间"
+                  android:textColor="#aaaaaa"
+                  android:textSize="18sp" />
+
+               <Button
+                   android:id="@+id/btnSelectMainTime"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:background="#ffffff"
+                   android:minHeight="45dp"
+                   android:onClick="selectTime"
+                   android:text=">"
+                   android:textColorLink="#000000" />
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp" >
+
+               <TextView
+                   android:id="@+id/textView5"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="15dp"
+                   android:text="选择车辆"
+                   android:textSize="18sp" />
+
+               <Spinner
+                   android:id="@+id/spnMainCar"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="15dp"
+                   android:layout_weight="1" />
+
+           </LinearLayout>
+
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="40dp"
+           android:layout_marginTop="20dp"
+           android:background="#ffffff" >
+
+           <TextView
+               android:id="@+id/textView7"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="200dp"
+               android:layout_marginTop="10dp"
+               android:text="合计:"
+               android:textSize="18sp" />
+
+           <TextView
+               android:id="@+id/textView8"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="15dp"
+               android:layout_marginTop="10dp"
+               android:text="¥180"
+               android:textSize="18sp" />
+
+       </LinearLayout>
+
+       <Button
+           android:id="@+id/btnOrderMain"
+           android:layout_width="match_parent"
+           android:layout_height="40dp"
+           android:layout_gravity="center"
+           android:layout_marginLeft="15dp"
+           android:layout_marginRight="15dp"
+           android:layout_marginTop="20dp"
+           android:background="#4caf50"
+           android:onClick="orderMain"
+           android:text="预约"
+           android:textColor="#ffffff" />
+
+   </LinearLayout>
+
+</FrameLayout>
+        

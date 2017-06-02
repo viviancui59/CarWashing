@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.ty.fragmentdemo.AddFeedbackActivity"
+    tools:ignore="MergeRootFrame" >
+  
+    
+    <RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content" >
+
+          
+		<TextView
+	        android:id="@+id/textView1"
+	        android:layout_width="fill_parent"
+	        android:layout_height="48dp"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentTop="true"
+	        android:background="#4caf50"
+	        android:gravity="center"
+	        android:text="意见反馈"
+	        android:textColor="#ffffff"
+	        android:textSize="20sp" />
+            
+		<LinearLayout
+			android:layout_width="80dp"
+    		android:layout_height="48dp" 
+			android:orientation="horizontal"
+			android:paddingLeft="10dp"
+			android:layout_alignParentLeft="true"
+			android:layout_alignParentTop="true">
+
+		<ImageView
+			android:layout_width="20dp"
+			android:layout_height="match_parent"
+			android:src="@drawable/fanhui" />
+     
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="#4caf50"
+			android:onClick="back"
+			android:text="返回"
+			android:textSize="16sp"
+			android:textColor="#ffffff" />
+		</LinearLayout>
+		
+		<Button
+          android:id="@+id/addFeedback"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_alignParentTop="true"
+          android:background="#4caf50"
+          android:onClick="addFeedback"
+          android:text="发送"
+          android:textSize="16sp"
+          android:textColor="#ffffff" />
+	</RelativeLayout>
+
+    <EditText
+        android:inputType="textMultiLine"
+        android:layout_width="320dp"
+        android:id="@+id/txt_feedback"
+        android:hint="请将您的建议或意见告诉我们~"
+        android:textSize="14sp"
+        android:gravity="left|top"
+        android:padding="8dp"
+        android:background="@drawable/textview_border"
+        android:layout_height="200dp"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</LinearLayout>
+    
